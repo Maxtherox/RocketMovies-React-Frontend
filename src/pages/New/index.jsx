@@ -18,8 +18,8 @@ export function New(){
                         
 
                         <div>
-                            <a to="/">voltar</a>
-                            <div><a href=""><FiArrowLeft/></a></div>
+                            <Link to="/">voltar</Link>
+                            <div><a href="#"><FiArrowLeft/></a></div>
                             
                         </div>
                         
@@ -44,8 +44,9 @@ export function New(){
                         </div>
                     </Section>
                     <div className='Buttons'>
+                        
                         <Button title="Excluir Filme"/>
-                        <Button title="Salvar alterações"/>
+                        <Button href="./Details" title="Salvar alterações"/>
                     </div>
                    
                 </Form>

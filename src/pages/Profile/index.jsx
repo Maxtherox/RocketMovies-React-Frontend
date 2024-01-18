@@ -17,6 +17,7 @@ export function Profile(){
             </header>
 
             <Form>
+                
                 <Avatar>
                     <img 
                         src="https://github.com/maxtherox.png" 
@@ -30,7 +31,7 @@ export function Profile(){
                     />
                 </label>
                 </Avatar>
-                
+        
 
                 <Input
                     placeholder="Nome"

@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const Container = styled.div`
     width: 100%;
-    
 
     > header {
         width: 100%;
@@ -25,6 +24,8 @@ export const Container = styled.div`
             display: flex;
             justify-content: center;
         }
+
+        
     }
 
 `;
@@ -36,6 +37,7 @@ export const Form = styled.form`
     > div:nth-child(4){
         margin-top: 24px;
     }
+
     `
 
 export const Avatar = styled.div`
@@ -54,7 +56,7 @@ export const Avatar = styled.div`
     > label {
         width: 48px;
         height: 48px;
-
+ 
         background-color: ${({theme}) => theme.COLORS.PINK};
         border-radius: 50%;
 
@@ -75,6 +77,7 @@ export const Avatar = styled.div`
         svg {
             width: 20px;
             height: 20px;
+            
             color: ${({theme}) => theme.COLORS.BACKGROUND_800};
         }
     }

@@ -7,6 +7,7 @@ import { ButtonText } from '../../components/ButtonText';
 import { MovieRating } from '../../components/MovieRating';
 import { Profile } from '../../components/Header/styles';
 import { FiClock, FiArrowLeft } from 'react-icons/fi';
+import { Link } from 'react-router-dom'
 
 export function Details(){
     return(
