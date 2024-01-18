@@ -6,6 +6,7 @@ import { NoteItem } from '../../components/NoteItem'
 import { Section} from '../../components/Section'
 import { Button } from '../../components/Button'
 import { Link } from 'react-router-dom'
+import { FiArrowLeft } from 'react-icons/fi'
 
 export function New(){
     return (
@@ -14,25 +15,39 @@ export function New(){
             <main>
                 <Form>
                     <header>
-                        <h1>Criar nota</h1>
-                        <a to="/">voltar</a>
+                        
+
+                        <div>
+                            <a to="/">voltar</a>
+                            <div><a href=""><FiArrowLeft/></a></div>
+                            
+                        </div>
+                        
+                        
+                        
+                        <h1>Novo filme</h1>
                     </header>
 
-                    <Input placeholder="Titulo"/>
+                    <div>
+                        <Input placeholder="Titulo"/>
+                        <Input placeholder="Rating (de 0 a 5)"/>
+                    </div>
+                    
                     <Textarea placeholder="Observações"/>
 
-                    <Section title="Links úteis">
-                        <NoteItem value="https://www.google.com"/>
-                        <NoteItem isNew placeholder="Novo link"/>
-                    </Section>
+                    <h2>Marcadores</h2>
 
                     <Section title="marcadores">
                         <div className='tags'>
-                        <NoteItem value="ract"/>
-                        <NoteItem isNew placeholder="Nova tag"/>
+                        <NoteItem value="Ficção científica"/>
+                        <NoteItem isNew placeholder="Novo marcador"/>
                         </div>
                     </Section>
-                    <Button title="Salvar"/>
+                    <div className='Buttons'>
+                        <Button title="Excluir Filme"/>
+                        <Button title="Salvar alterações"/>
+                    </div>
+                   
                 </Form>
             </main>
         </Container>
